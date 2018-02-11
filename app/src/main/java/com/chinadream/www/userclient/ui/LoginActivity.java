@@ -55,7 +55,7 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener,
 
     /**
      * 10.1.250.3：8091/ht.php/Tobemember/checkinfo
-     * 登录接口
+     * 登录接口 测试测试
      */
     class ConnectionService implements ServiceConnection{
 
