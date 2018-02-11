@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#20b2aa"
+        android:padding="10dp">
+        <TextView
+            android:id="@+id/tv_locate_in_item_home_locate"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="正在定位中"
+            android:drawableRight="@mipmap/down_in_fragment_homex"
+            android:drawableLeft="@mipmap/location_in_fragment_home"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:singleLine="true"/>
+    </RelativeLayout>
+</LinearLayout>

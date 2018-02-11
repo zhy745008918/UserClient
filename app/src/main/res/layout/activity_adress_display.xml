@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_adress_display"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.chinadream.www.userclient.ui.AddressDisplayActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/activity_base"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <ListView
+            android:id="@+id/lv_address_in_address_display"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/tv_whether_address_in_address_display"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="暂无收货地址"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:drawableTop="@mipmap/shopxxxx"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        >
+        <TextView
+            android:id="@+id/tv_add_new_address_in_address_display"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableLeft="@mipmap/addnew_press"
+            android:layout_weight="1"
+            android:text="新增收货地址"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="#20B2AA"
+            android:textStyle="bold"
+            android:background="@drawable/bg_for_addnew_press"/>
+    </LinearLayout>
+
+
+</LinearLayout>

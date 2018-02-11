@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_commodity_display"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.chinadream.www.userclient.ui.CommodityDisplayActivity"
+    android:background="#ddd">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <include layout="@layout/activity_base"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:paddingTop="40dp"
+        android:paddingBottom="20dp">
+        <ImageView
+            android:id="@+id/iv_commodity_indis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/testcolor"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_margin="8dp">
+        <TextView
+            android:id="@+id/tv_commodity_name_indis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="今麦郎矿泉水 XXXml/瓶"/>
+        <TextView
+            android:id="@+id/tv_salecount_indis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="月成交170笔"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+            <TextView
+                android:id="@+id/tv_singlecomm_indis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="￥ 0.89"
+                android:textStyle="bold"
+                android:textColor="#f92"
+                android:layout_alignParentLeft="true"/>
+            <ImageView
+                android:id="@+id/iv_norms_indis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/shopx"/>
+        </RelativeLayout>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#bbb"
+            />
+        <TextView
+            android:id="@+id/tv_shopname_indis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="梦网O店"
+            android:gravity="center_vertical"
+            android:textSize="18dp"
+            android:drawableRight="@mipmap/shopx"
+            android:padding="5dp"/>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#bbb"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="品牌/规格"
+            android:padding="5dp"/>
+        <TextView
+            android:id="@+id/tv_brand_indis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="今麦郎550ml"
+            android:padding="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商品详情"
+            android:paddingLeft="5dp"/>
+        <TextView
+            android:id="@+id/tv_commodity_details_indis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="温馨提示：图片仅供参考，请以实物为准，高峰时段及恶略天气，请提前下单！！"
+            android:padding="5dp"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#fff">
+        <ImageView
+            android:id="@+id/iv_trolley_indis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher"/>
+        <TextView
+            android:id="@+id/tv_commodity_sum_indis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:text="￥ 0"
+            android:textStyle="bold"
+            android:textColor="#f92"
+            android:textSize="20dp"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:background="#ddd"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
+        <TextView
+            android:id="@+id/tv_send_fee_indis"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="另需配送费3元"
+            />
+        <TextView
+            android:id="@+id/tv_init_sum_indis"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="20元起送"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:background="#bbb"
+            android:gravity="center"
+            android:padding="5dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

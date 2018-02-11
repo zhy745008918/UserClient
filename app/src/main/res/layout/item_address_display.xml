@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/iv_address_modification_in_address_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/modification_in_item"
+        android:layout_margin="15dp"/>
+    <TextView
+        android:id="@+id/tv_user_info_in_address_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/iv_address_modification_in_address_item"
+        android:layout_alignParentLeft="true"
+        android:text="dddd"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:padding="5dp"/>
+    <TextView
+        android:id="@+id/tv_address_info_in_address_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/iv_address_modification_in_address_item"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/tv_user_info_in_address_item"
+        android:padding="5dp"
+        android:text="2255sd"/>
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#20B2AA</color>
+    <color name="colorPrimaryDark">#21A3AA</color>
+    <color name="colorAccent">@color/colorPrimaryDark</color>
+    <!--Window color-->
+    <color name="widowColor">#ddd</color>
+    <color name="actionBarColor">#20B2AA</color>
+    <color name="actionBarMidColor">#fff</color>
+    <color name="actionBarSideColor">#eee</color>
+    <color name="bg_for_edit">#fff</color>
+    <color name="stroke_for_edit">#eee</color>
+    <color name="bg_for_rebtn_pressed">#20B2AA</color>
+    <color name="stroke_for_rebtn">#20B2AA</color>
+    <color name="bg_for_rebtn_unpress">#ddd</color>
+    <color name="color_for_text_green">#20B2AA</color>
+    <color name="color_for_text_white">#fff</color>
+    <color name="color_for_sms_login">#fff</color>
+    <color name="color_for_login_unselect">#aaa</color>
+    <color name="channel_gridview_item_click">#af2</color>
+    <color name="transparent">#00000000</color>
+</resources>
+

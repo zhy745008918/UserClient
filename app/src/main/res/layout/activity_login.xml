@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.chinadream.www.userclient.ui.LoginActivity"
+    android:background="#ddd">
+    <LinearLayout
+        android:id="@+id/in_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/activity_base"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/in_login"
+        android:layout_marginTop="15dp"
+        >
+        <LinearLayout
+            android:id="@+id/ll_sms_in_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/et_sms_login_in_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/ic_launcher"
+                    android:hint="请输入手机号"
+                    android:background="@drawable/bg_for_sms_edit"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dp"
+                    android:maxLength="11"
+                    android:inputType="number"/>
+
+                <Button
+                    android:id="@+id/btn_send_sms_in_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_login_select"
+                    android:textColor="@drawable/color_login_text"
+                    android:text="获取验证码"/>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/et_sms_verify_in_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/ic_launcher"
+                android:hint="请输入短信验证码"
+                android:background="@drawable/bg_edit"
+                android:paddingLeft="5dp"
+                android:inputType="number"
+                />
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn_login_in_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="登     录"
+            android:layout_centerInParent="true"
+            android:textColor="@drawable/color_login_text"
+            android:background="@drawable/bg_login_select"
+            android:layout_margin="10dp"
+            />
+        <LinearLayout
+            android:id="@+id/ll_method_in_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_weixin_login_in_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@mipmap/ic_launcher"
+                android:text="微信登录"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"/>
+            <TextView
+                android:id="@+id/tv_qq_login_in_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@mipmap/ic_launcher"
+                android:text="QQ登录"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"/>
+            <TextView
+                android:id="@+id/tv_weibo_login_in_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@mipmap/ic_launcher"
+                android:text="微博登录"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"/>
+
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/rl_login_in_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/ll_method_in_login"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/tv_method"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="第三方登录"
+                android:gravity="center"
+                />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_toLeftOf="@id/tv_method"
+                android:background="#aaa"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"/>
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="#aaa"
+                android:layout_toRightOf="@id/tv_method"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="20dp"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

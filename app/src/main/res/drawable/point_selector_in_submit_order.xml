@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true"
+        android:drawable="@mipmap/point_true_in_submit_order_activity"></item>
+    <item android:drawable="@mipmap/point_false_in_submit_order_activity"></item>
+</selector>
